@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print13(int n)
+void print13(int n)
 {
     int start = 1;
     for (int i = 0; i < n; i++)

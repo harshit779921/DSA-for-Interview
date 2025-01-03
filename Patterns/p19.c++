@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print19(int n)
+void print19(int n)
 {
     int space = 0;
     for (int i = 0; i < n; i++)

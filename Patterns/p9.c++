@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print7(int n)
+void print7(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -25,9 +25,7 @@ int print7(int n)
     }
 }
 
-#include <iostream>
-using namespace std;
-int print8(int n)
+void print8(int n)
 {
     for (int i = 0; i < n; i++)
     {

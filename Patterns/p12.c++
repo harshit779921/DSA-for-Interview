@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print12(int n)
+void print12(int n)
 {
     int space = 2 * (n - 1);
     for (int i = 1; i <= n; i++)

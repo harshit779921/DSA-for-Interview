@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print5(int n)
+void print5(int n)
 {
     for (int i = 1; i <= n; i++)
     {
