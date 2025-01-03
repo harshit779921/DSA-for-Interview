@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int print11(int n)
+int print14(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -16,5 +16,5 @@ int main()
 {
     int n;
     cin >> n;
-    print11(n);
+    print14(n);
 }

@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
-int print13(int n)
+int print15(int n)
 {
-    int start = 1;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (char ch = 'A'; ch <= 'A' + (n-i-1); ch++)
         {
-            cout << start << " ";
-            start = start+1;
+            cout << ch << " ";
         }
         cout << endl;
     }
@@ -18,5 +16,5 @@ int main()
 {
     int n;
     cin >> n;
-    print13(n);
+    print15(n);
 }
