@@ -22,9 +22,20 @@ void print24(int n)
         cout << endl;
     }
 }
+void print25(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        for (char ch = 'A'; ch <= 'A' + n; ch++)
+        {
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
     cin >> n;
-    print24(n);
+    print25(n);
 }
