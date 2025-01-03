@@ -13,14 +13,14 @@ void pattern22(int n)
 
             // Initialising the top, down, left and right indices of a cell.
             int top = i;
-            int bottom = j;
+            int left = j;
             int right = (2 * n - 2) - j;
-            int left = (2 * n - 2) - i;
+            int down = (2 * n - 2) - i;
 
             // Min of 4 directions and then we subtract from n
             // because previously we would get a pattern whose border
             // has 0's, but we want with border N's and then decreasing inside.
-            cout << (n - min(min(top, bottom), min(left, right))) << " ";
+            cout << (n - min(min(top, down), min(left, right))) << " ";
         }
 
         // As soon as the numbers for each iteration are printed, we move to the
@@ -34,8 +34,8 @@ int main()
 {
     // Here, we have taken the value of N as 5.
     // We can also take input from the user.
-    int N = 5;
-
+    int N ;
+    cin >> N ;
     pattern22(N);
 
     return 0;
