@@ -108,9 +108,21 @@ void print31(int n)
         cout << endl;
     }
 }
+void print32(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+
+        for (int j = i; j >= 1; j--)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
     cin >> n;
-    print31(n);
+    print32(n);
 }
