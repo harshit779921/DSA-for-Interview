@@ -137,19 +137,34 @@ void print34(int n)
 {
     for (int i = 0; i < n; i++)
     {
-        char ch = 'A'+i;
+        char ch = 'A' + i;
         for (int j = 0; j <= i; j++)
         {
             cout << ch << " ";
             ch--;
         }
         cout << endl;
-        
+    }
+}
+void print35(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        // space
+        for (int j = 1; j <= i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= n-i; j++)
+        {
+            cout << i ;
+        }
+        cout << endl;
     }
 }
 int main()
 {
     int n;
     cin >> n;
-    print34(n);
+    print35(n);
 }
