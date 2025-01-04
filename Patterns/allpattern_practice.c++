@@ -86,11 +86,10 @@ void print30(int n)
     char ch = 'A';
     for (int i = 0; i < n; i++)
     {
-        
+
         for (int j = 0; j <= i; j++)
         {
             cout << ch << " ";
-            
         }
         cout << endl;
         ch++;
@@ -134,9 +133,23 @@ void print33(int n)
         cout << endl;
     }
 }
+void print34(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        char ch = 'A'+i;
+        for (int j = 0; j <= i; j++)
+        {
+            cout << ch << " ";
+            ch--;
+        }
+        cout << endl;
+        
+    }
+}
 int main()
 {
     int n;
     cin >> n;
-    print33(n);
+    print34(n);
 }
