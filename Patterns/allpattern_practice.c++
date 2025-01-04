@@ -76,14 +76,29 @@ void print29(int n)
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << i<< " ";
+            cout << i << " ";
         }
         cout << endl;
+    }
+}
+void print30(int n)
+{
+    char ch = 'A';
+    for (int i = 0; i < n; i++)
+    {
+        
+        for (int j = 0; j <= i; j++)
+        {
+            cout << ch << " ";
+            
+        }
+        cout << endl;
+        ch++;
     }
 }
 int main()
 {
     int n;
     cin >> n;
-    print29(n);
+    print30(n);
 }
