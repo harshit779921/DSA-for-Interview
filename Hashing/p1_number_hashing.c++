@@ -11,7 +11,7 @@ int main()
         cin >> arr[i];
     }
 
-    int hash[13] = {0};
+    int hash[13] = {0}; //we give it 0 otherwise is take garbage value
     for (int i = 0; i < n; i++)
     {
         hash[arr[i]] += 1;
